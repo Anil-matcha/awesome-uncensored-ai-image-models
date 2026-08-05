@@ -24,6 +24,12 @@ assignees: ""
 - Inference tools/workflows tested:
 - Date tested:
 
+## Uncensored / low-filter evidence
+
+- Is this a full checkpoint, LoRA, text encoder, or pipeline change?
+- What exact upstream text, tags, tests, or release notes support the claim?
+- What base model is required?
+
 ## Filtering behavior
 
 Describe what you tested and distinguish between model behavior, pipeline safety checkers, prompt wrappers, and UI settings. Do not include abusive or illegal example prompts or outputs.
@@ -33,4 +39,5 @@ Describe what you tested and distinguish between model behavior, pipeline safety
 - [ ] The source is public and reputable.
 - [ ] The exact version is identified.
 - [ ] License terms are linked.
+- [ ] The uncensored/low-filter claim is sourced and clearly labeled as creator-reported or independently tested.
 - [ ] The information above is reproducible.

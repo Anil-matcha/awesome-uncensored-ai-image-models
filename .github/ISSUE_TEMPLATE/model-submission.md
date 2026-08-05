@@ -27,6 +27,7 @@ assignees: ""
 ## Uncensored / low-filter evidence
 
 - Is this a full checkpoint, LoRA, text encoder, or pipeline change?
+- If hosted/API-based, what exact provider, endpoint, snapshot, region, and date were tested?
 - What exact upstream text, tags, tests, or release notes support the claim?
 - What base model is required?
 

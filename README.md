@@ -9,6 +9,7 @@
 ## Contents
 
 - [Recent catalog](#recent-catalog)
+- [Filtered reference models](#filtered-reference-models)
 - [Community-labeled uncensored variants](#community-labeled-uncensored-variants)
 - [Established local baselines](#established-local-baselines)
 - [Community checkpoints and fine-tunes](#community-checkpoints-and-fine-tunes)
@@ -19,38 +20,45 @@
 
 ## Recent catalog
 
-This section includes both open-weight and proprietary/hosted models. Hosted models are listed for comparison and are subject to the provider's terms and safety systems; they should not be described as uncensored merely because they are accessible through an API.
+The recent catalog separates locally runnable candidates from models that are clearly provider-filtered or safety-mitigated. Hosted access never implies uncensored behavior. Models in the filtered section are retained only as comparison references, not as uncensored recommendations.
 
-### 2026 releases and current models
+### Recent local candidates — uncensored status still requires testing
 
-| Model | Release / update | Access | Best known for | Filtering / policy | Official source |
+| Model | Release / update | Access | Why it belongs here | Status | Official source |
 | --- | --- | --- | --- | --- | --- |
-| GPT Image 2 / ChatGPT Images 2.0 | 2026-04-21 | Hosted / API | General generation, editing, typography, and visual reasoning | Provider policy and safety systems | [API model](https://developers.openai.com/api/docs/models/gpt-image-2) · [announcement](https://openai.com/index/introducing-chatgpt-images-2-0/) |
-| Gemini 3.1 Flash Image (Nano Banana 2) | 2026 | Hosted / API | Fast generation, multi-turn editing, references, and 4K output | Google policy; SynthID watermarking | [Gemini image guide](https://ai.google.dev/gemini-api/docs/image-generation) |
-| Gemini 3 Pro Image (Nano Banana Pro) | 2026 | Hosted / API | Complex visual tasks, grounding, and high-fidelity editing | Google policy; SynthID watermarking | [Gemini image guide](https://ai.google.dev/gemini-api/docs/image-generation) |
-| Recraft V4.1 family | 2026-05-30 | Hosted / API | Design direction, production graphics, utility layouts, and vectors | Provider policy; hosted only | [Release](https://www.recraft.ai/press-releases/recraft-v4-1-utility-pro-becomes-the-highest-ranked-text-to-image-model-outside-google-and-openai) |
-| Ideogram 4.0 | 2026-06-03 | Open weights / API | Typography, layout control, brand assets, and 2K images | Verify the model card and deployment pipeline | [Release](https://ideogram.ai/news/ideogram-4.0/) · [technical details](https://ideogram.ai/blog/ideogram-4.0/) |
 | HiDream-O1-Image / Dev-2604 | 2026-05 | Local weights | Text-to-image, editing, personalization, and long text layout | To verify per checkpoint and pipeline | [Model card](https://huggingface.co/HiDream-ai/HiDream-O1-Image) |
-| Seedream 5.0 Lite | 2026-02-13 | Hosted / API | Multimodal generation, editing, reasoning, and current-information visuals | Provider policy; hosted only | [Official release](https://seed.bytedance.com/en/blog/deeper-thinking-more-accurate-generation-introducing-seedream-5-0-lite) |
-| Qwen-Image-2.0 | 2026-02-10 | Hosted / API | Professional typography, 2K generation, and unified editing | Hosted policy; availability and terms vary | [Official project](https://github.com/QwenLM/Qwen-Image) |
 | HunyuanImage-3.0-Instruct / Distil | 2026-01-26 | Local weights | Prompt reasoning, image-to-image editing, and efficient inference | To verify per checkpoint and pipeline | [Official project](https://github.com/Tencent-Hunyuan/HunyuanImage-3.0) |
-| FLUX.2 [klein] 4B / 9B | 2026-01-15 | Local weights / API | Fast generation and editing on consumer hardware | 4B is Apache-2.0; 9B has FLUX terms; local pipeline-dependent | [Official inference repo](https://github.com/black-forest-labs/flux2) |
 
-### 2025 releases still worth tracking
+### Recent local candidates — 2025 updates
 
-| Model | Release / update | Access | Best known for | Filtering / policy | Official source |
+| Model | Release / update | Access | Why it belongs here | Status | Official source |
 | --- | --- | --- | --- | --- | --- |
-| GPT Image 1.5 | 2025-12-16 | Hosted / API | Precise editing, image preservation, and dense text | Provider policy and safety systems | [Announcement](https://openai.com/index/new-chatgpt-images-is-here/) |
-| Qwen-Image-2512 / Edit-2511 / Layered | 2025-12 | Local weights | Realism, editing consistency, and layer decomposition | To verify per checkpoint and pipeline | [Official project](https://github.com/QwenLM/Qwen-Image) · [model collection](https://huggingface.co/collections/Qwen/qwen-image) |
-| FLUX.2 [pro] / [flex] / [max] | 2025-11-25 onward | Hosted / API | Production generation, editing, typography, and control | Provider policy; API terms apply | [Release notes](https://docs.bfl.ai/release-notes) |
-| FLUX.2 [dev] | 2025-11-25 | Local weights | High-quality text-to-image and single/multi-reference editing | FLUX non-commercial terms; inference filters/manual review required by the license | [Model card](https://huggingface.co/black-forest-labs/FLUX.2-dev) |
-| Adobe Firefly Image Model 5 | 2025-10-28 | Hosted | Commercial creative workflows and photorealism | Adobe's commercially safe model and provider controls | [Adobe announcement](https://news.adobe.com/news/2025/10/adobe-max-2025-firefly) |
-| Seedream 4.5 | 2025 | Hosted / API | Multi-image editing, reference consistency, and typography | Provider policy; hosted only | [Official model page](https://seed.bytedance.com/en/seedream4_5) |
-| Seedream 4.0 | 2025-09-09 | Hosted / API | Unified generation/editing and up to 4K output | Provider policy; hosted only | [Official release](https://seed.bytedance.com/en/blog/seedream-4-0-officially-released-beyond-drawing-into-imagination) |
-| Nano Banana (Gemini 2.5 Flash Image) | 2025 | Hosted / API | Fast conversational image generation and editing | Google policy; SynthID watermarking | [Model page](https://ai.google.dev/gemini-api/docs/models/gemini-2.5-flash-image) |
-| Imagen 4 | 2025-05-20 | Hosted / API | Photorealism, styles, detail, text, and up to 2K output | Google policy; migration path should be checked | [Google DeepMind](https://deepmind.google/models/imagen/) |
-| Midjourney V7 | 2025-04-30 update | Hosted | Aesthetics, prompt accuracy, and coherent subjects | Hosted moderation and platform policy | [Official update](https://updates.midjourney.com/v7-update-editor-and-exp/) |
-| Ideogram 3.0 | 2025-03-26 | Hosted / API | Text rendering, graphic design, and style references | Hosted moderation and platform policy | [Official release](https://about.ideogram.ai/3.0) |
+| Qwen-Image-2512 / Edit-2511 / Layered | 2025-12 | Local weights | Realism, editing consistency, and layer decomposition | To verify | [Official project](https://github.com/QwenLM/Qwen-Image) · [model collection](https://huggingface.co/collections/Qwen/qwen-image) |
+
+## Filtered reference models
+
+These models are recent and useful for image-model comparisons, but their provider controls or upstream safety mitigations make them poor fits for an uncensored list. They remain here so the repository does not confuse frontier quality with low filtering.
+
+| Model | Release / update | Access | Why excluded from the uncensored list | Official source |
+| --- | --- | --- | --- | --- |
+| GPT Image 2 / ChatGPT Images 2.0 | 2026-04-21 | Hosted / API | Provider safety policy and moderation systems | [API model](https://developers.openai.com/api/docs/models/gpt-image-2) · [announcement](https://openai.com/index/introducing-chatgpt-images-2-0/) |
+| Gemini 3.1 Flash Image (Nano Banana 2) | 2026 | Hosted / API | Google policy controls and provenance/watermark systems | [Gemini image guide](https://ai.google.dev/gemini-api/docs/image-generation) |
+| Gemini 3 Pro Image (Nano Banana Pro) | 2026 | Hosted / API | Google policy controls and hosted-only access | [Gemini image guide](https://ai.google.dev/gemini-api/docs/image-generation) |
+| Recraft V4.1 family | 2026-05-30 | Hosted / API | Provider policy; no local model access | [Release](https://www.recraft.ai/press-releases/recraft-v4-1-utility-pro-becomes-the-highest-ranked-text-to-image-model-outside-google-and-openai) |
+| Ideogram 4.0 | 2026-06-03 | Open weights / API | The upstream reference pipeline includes safety mitigations; custom local deployments need separate testing | [Release](https://ideogram.ai/news/ideogram-4.0/) · [technical details](https://ideogram.ai/blog/ideogram-4.0/) |
+| Seedream 5.0 Lite | 2026-02-13 | Hosted / API | Provider-controlled access; no public local checkpoint listed | [Official release](https://seed.bytedance.com/en/blog/deeper-thinking-more-accurate-generation-introducing-seedream-5-0-lite) |
+| Qwen-Image-2.0 | 2026-02-10 | Hosted / API | Hosted availability and policy terms vary | [Official project](https://github.com/QwenLM/Qwen-Image) |
+| FLUX.2 [klein] 4B / 9B | 2026-01-15 | Local weights / API | Upstream safety fine-tuning and filters; 9B terms require filters/manual review | [Official inference repo](https://github.com/black-forest-labs/flux2) |
+| GPT Image 1.5 | 2025-12-16 | Hosted / API | Provider policy and safety systems | [Announcement](https://openai.com/index/new-chatgpt-images-is-here/) |
+| FLUX.2 [pro] / [flex] / [max] | 2025-11-25 onward | Hosted / API | Provider policy and API terms apply | [Release notes](https://docs.bfl.ai/release-notes) |
+| FLUX.2 [dev] | 2025-11-25 | Local weights | License requires inference filters or manual review | [Model card](https://huggingface.co/black-forest-labs/FLUX.2-dev) |
+| Adobe Firefly Image Model 5 | 2025-10-28 | Hosted | Adobe's commercially safe model and provider controls | [Adobe announcement](https://news.adobe.com/news/2025/10/adobe-max-2025-firefly) |
+| Seedream 4.5 | 2025 | Hosted / API | Provider policy; hosted only | [Official model page](https://seed.bytedance.com/en/seedream4_5) |
+| Seedream 4.0 | 2025-09-09 | Hosted / API | Provider policy; hosted only | [Official release](https://seed.bytedance.com/en/blog/seedream-4-0-officially-released-beyond-drawing-into-imagination) |
+| Nano Banana (Gemini 2.5 Flash Image) | 2025 | Hosted / API | Google policy controls and SynthID watermarking | [Model page](https://ai.google.dev/gemini-api/docs/models/gemini-2.5-flash-image) |
+| Imagen 4 | 2025-05-20 | Hosted / API | Google policy controls; hosted lifecycle applies | [Google DeepMind](https://deepmind.google/models/imagen/) |
+| Midjourney V7 | 2025-04-30 update | Hosted | Hosted moderation and platform policy | [Official update](https://updates.midjourney.com/v7-update-editor-and-exp/) |
+| Ideogram 3.0 | 2025-03-26 | Hosted / API | Hosted moderation and platform policy | [Official release](https://about.ideogram.ai/3.0) |
 
 ## Community-labeled uncensored variants
 

@@ -4,10 +4,12 @@
 
 "Uncensored" is not a standardized technical term. A model's behavior can change with the checkpoint, prompt wrapper, inference UI, safety checker, provider policy, and version. This list records those details instead of treating the label as a guarantee.
 
-**Last reviewed:** 2026-08-06
+**Last reviewed:** 2026-09-29
 
 ## Related Projects
 
+- [awesome-uncensored-llms](https://github.com/Anil-matcha/awesome-uncensored-llms) — Companion catalog for language models and LLM fine-tunes.
+- [awesome-uncensored-ai-models](https://github.com/Anil-matcha/awesome-uncensored-ai-models) — Directory for all three uncensored model catalogs.
 - [awesome-ai-image-models](https://github.com/Anil-matcha/awesome-ai-image-models) — Compare mainstream and open image models by provider, price, and capability alongside this filtering-focused catalog.
 - [awesome-uncensored-ai-video-models](https://github.com/Anil-matcha/awesome-uncensored-ai-video-models) — Companion catalog for video-generation and video-editing model variants.
 - [Open-Generative-AI](https://github.com/Anil-matcha/Open-Generative-AI) — Self-hosted image and video studio for testing generative-media workflows.

@@ -86,7 +86,7 @@ These models are recent and useful for image-model comparisons, but their provid
 
 Recent model cards and community checkpoints use “uncensored” in several different ways: a modified text encoder, an adult-content fine-tune, removal of an optional safety component, or simply a repository name. The [dedicated uncensored-variants catalog](UNCENSORED-MODELS.md) records the evidence, base model, access requirements, and licensing caveats for each entry.
 
-The strongest recent examples found during the 2026-08-06 review include the Seedream, Qwen Image, and Wan variant families; the open-weight Z-Image and FLUX families; FLUX.2 Klein uncensored text-encoder variants; a Qwen-Image NSFW LoRA; and FLUX.1/SDXL community checkpoints. The [full variant matrix](UNCENSORED-MODELS.md) records the individual versions and endpoint types. These are community or endpoint claims unless the entry is explicitly marked otherwise; local execution does not remove legal or license restrictions.
+The strongest recent examples found during the 2026-08-06 review include the Seedream, Qwen Image, and Wan variant families; the open-weight Z-Image and FLUX families; FLUX.2 Klein uncensored text-encoder variants; a Qwen-Image low-filter LoRA; and FLUX.1/SDXL community checkpoints. The [full variant matrix](UNCENSORED-MODELS.md) records the individual versions and endpoint types. These are community or endpoint claims unless the entry is explicitly marked otherwise; local execution does not remove legal or license restrictions.
 
 ## Established local baselines
 

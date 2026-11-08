@@ -8,6 +8,7 @@
 
 ## Related Projects
 
+- [Spicy AI Image Generator API](https://github.com/Anil-matcha/Spicy-AI-Image-Generator-API) — compare spicy-catalog image endpoints across Seedream, Qwen, Wan 2.7, Grok Imagine and Z-Image.
 - [awesome-uncensored-llms](https://github.com/Anil-matcha/awesome-uncensored-llms) — Companion catalog for language models and LLM fine-tunes.
 - [awesome-uncensored-ai-models](https://github.com/Anil-matcha/awesome-uncensored-ai-models) — Directory for all three uncensored model catalogs.
 - [awesome-ai-image-models](https://github.com/Anil-matcha/awesome-ai-image-models) — Compare mainstream and open image models by provider, price, and capability alongside this filtering-focused catalog.
